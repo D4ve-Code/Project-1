@@ -4,3 +4,52 @@
     --secondary-color:#D691CE;
     --third-color:#FFFFFF;
 }
+#logo {
+    background-color: #373748;
+    width: auto;
+    height: auto;
+}
+#logo img {
+    width: 120px;
+    height: 100%;
+}
+header {
+    background-color: #373748;
+    width: auto;
+    height: auto;
+    padding-bottom: 40px;
+    
+}
+header h1 {
+    color: #D691CE;
+    font-size: 6em;
+    text-align: center;
+    text-decoration:underline;
+}
+body {
+    background-color: #373748;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.card-grid {
+    width: 60%;
+    box-sizing: border-box;
+    display: grid;
+    grid-column: 4;
+    grid-row: 3;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px;
+}
+.card-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-grid-selected {
+    grid-column: span 2;
+    grid-row: span 3;
+    grid-area: 1 / 2 / 4 / 4;
+}
