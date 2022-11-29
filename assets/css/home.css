@@ -17,9 +17,8 @@
 }
 
 body {
-    background: url(../img/) no-repeat center;
+    background: url(../img/coeur.png) no-repeat center;
     background-color: var(--background-color);
-    
 }
 
 ul, a {
@@ -33,7 +32,7 @@ h1, h3 {
     font-family: var(--font2);
     color: var(--secondary-color);
 }
-button {
+input {
     color: var(--background-color);
     font-family: var(--font2);
     background-color: var(--secondary-color);
@@ -42,28 +41,30 @@ button {
     height: 82px;
     border-color: var(--secondary-color);
     font-size: 30px;
+    margin-left: 50%;
+    margin-top: 17rem;
+    transform: translateX(-50%);
 }
 .home-container {
-    min-width: 390px;
-    min-height: 800px;
+    width: 100%;
+    height: auto;
 }
-.home-container h1, h3, button {
+.home-container h1, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .home-container h1 {
     font-size: 40px;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 .home-container h3 {
     font-size: 30px;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
-.home-container button {
-    font-size: 30px;
-    margin-top: 10rem;
-    margin-left: 5rem;
+
+.staff {
+    align-items: center;
 }
 
 
@@ -72,5 +73,5 @@ footer ul {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin: 1rem;
+    margin: 15rem 1rem 0 1rem;
 }
