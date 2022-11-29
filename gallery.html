@@ -42,12 +42,30 @@
 <!--  MAIN  -->
 
         <main>
-
+            <div id="carrousel">
+                <div id="container">
+                </div>
+                <img src="assets/img/fleche-incurvee-droite.png" alt="bouton droite" class="bouton" id="d" />
+                <img src="assets/img/fleche-incurvee-gauche.png" alt="bouton gauche" class="bouton" id="g" />
+            </div>
+            <script>
+                document.body.onload = function () {
+                    nbr = 5;
+                    p = 0;
+                    container = document.getElementById("container");
+                    g = document.getElementById("g");
+                    d = document.getElementById("d");
+                    container.style.width = (800 * nb) + "px";
+                    for (i = 1; i <= nbr; i++) {
+                        div =
+                                }
+                }
+            </script>
         </main>
 
 <!--  FOOTER  -->
 
-        <footer>
+        <!-- <footer>
             <small>
                 <ul>
                     <li><a href="#">Conditions générale</a></li>
@@ -55,7 +73,7 @@
                     <li><a href="#">Sign Up</a></li>
                 </ul>
             </small>
-        </footer>
+        </footer> -->
 
 <!--  JS  -->
 
