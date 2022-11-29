@@ -1,0 +1,40 @@
+:root {
+    --background-color: #373748;
+    --main-color: #A5A5C6;
+    --secondary-color:#D691CE;
+    --third-color:#FFFFFF;
+}
+        
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--font);
+}
+h1, h3 {
+    font-family: var(--font);
+    color: var(--secondary-color);
+    font-family: var(--font);
+}
+button {
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    width: 228px;
+    height: 82px;
+    border-color: var(--secondary-color);
+    font-size: 30px;
+}
