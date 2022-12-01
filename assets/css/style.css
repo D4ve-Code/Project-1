@@ -4,7 +4,10 @@
     --secondary-color: #D691CE;
     --third-color: #FFFFFF;
     --fourth-color: #cc4ca1d9;
+    --font2: "poppins", sans-serif;
+    --font1: "Zen Dots", cursive
 }
+
 /***********************************************************LOGO**********************************************************************/
 #logo {
     background-color: var(--background-color);
@@ -16,6 +19,7 @@
     width: 15%;
     height: 15%;
 }
+
 /***********************************************************HEADER********************************************************************/
 header {
     background-color: var(--background-color);
@@ -24,10 +28,13 @@ header {
 }
 
 header h1 {
+    margin-bottom: 8vh;
+    font-family: "Zen Dots";
     color: var(--secondary-color);
-    font-size: calc(5vw + 4vh);
+    font-size: calc(3vw + 4vh);
     text-align: center;
 }
+
 /************************************************************BODY*********************************************************************/
 body {
     background-color: var(--background-color);
@@ -37,10 +44,11 @@ main {
     display: flex;
     justify-content: center;
 }
+
 /************************************************************GRID*********************************************************************/
 .card-grid {
     margin-top: 75px;
-    width: 50%;
+    width: 60%;
     height: auto;
     box-sizing: border-box;
     display: grid;
@@ -51,6 +59,7 @@ main {
     gap: 8px;
     height: 95vh;
 }
+
 /********************************************************SECONDARY CARDS**************************************************************/
 .thecard {
     position: relative;
@@ -75,9 +84,11 @@ main {
     border-radius: 10px;
     font-size: calc(0.5vw + 0.3vh);
 }
+
 .front h1 {
-  font-size: calc(0.8vh + 0.6vw);
-  color: var(--secondary-color);
+    font-size: calc(0.8vh + 0.6vw);
+    color: var(--secondary-color);
+    font-family: "Zen Dots";
 }
 
 .back {
@@ -100,33 +111,52 @@ main {
 }
 
 .back h1 {
+    font-family: "Zen Dots";
     color: var(--fourth-color);
-    font-size: calc(1vh + 1vw);
+    font-size: calc(1vh + 0.7vw);
     margin-top: 1vh;
 }
 
 .back p {
+    font-family: "poppins";
     text-align: start;
     font-size: calc(0.5vw + 0.7vh);
 }
 
 .back .desc {
+    margin-bottom: 0.5em;
     font-weight: bold;
-    font-size: calc(0.8vw + 0.8vh);
-    color: var(--fourth-color);
+    font-size: calc(0.6vw + 0.7vh);
+    color: var(--background-color);
 
 }
 
-.back .qualflaw { 
+.back .qualflaw {
     font-weight: bold;
-    font-size: calc(0.7vw + 0.7vh);
-    color: var(--fourth-color);
+    font-size: calc(0.4vw + 0.6vh);
+    color: var(--background-color);
     word-wrap: break-word;
+    font-family: "poppins";
+    margin-top: 5%;
+    margin-bottom: 5%;
 
 }
 
 .thecard:hover {
     transform: rotateY(180deg);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: var(--third-color);
+    text-decoration: none;
+    border: solid var(--secondary-color);
+    border-radius: 2em;
+    width: 40%;
+    padding: 2% 2%;
+    cursor: pointer;
+    background-color: var(--background-color);
 }
 /************************************************************MAIN CARD****************************************************************/
 .thecard-chosen {
@@ -155,7 +185,8 @@ main {
 }
 
 .front-chosen h1 {
-    font-size: calc(1.1vw + 1.8vh);
+    font-size: calc(1vw + 1.2vh);
+    font-family: "Zen Dots";
 }
 
 .back-chosen {
@@ -168,6 +199,7 @@ main {
     text-align: center;
     transform: rotateY(180deg);
     border-radius: 10px;
+    color: black;
 }
 
 .back-chosen img {
@@ -178,14 +210,58 @@ main {
 }
 
 .back-chosen h1 {
-    font-size: calc(2vh + 1.8vw);
+    font-family: "Zen Dots";
+    font-size: calc(1vh + 1.8vw);
+    margin-top: 1vh;
+    color: var(--fourth-color);
+}
+.back-chosen .desc {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: calc(1vw + 1vh);
+    color: var(--background-color);
+    text-align: start;
+
+}
+.back-chosen p {
+    font-family: "poppins";
+    text-align: start;
+    font-size: calc(0.8vw + 0.8vh);
+}
+.back-chosen .qualflaw {
+    font-weight: bold;
+    font-size: calc(1vw + 1vh);
+    color: var(--background-color);
+    word-wrap: break-word;
+    font-family: "poppins";
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+
 }
 
 .thecard-chosen:hover {
     transform: rotateY(180deg);
 }
+.chosen-button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: var(--third-color);
+    text-decoration: none;
+    border: solid var(--secondary-color);
+    border-width: 0.3em;
+    border-radius: 3em;
+    width: 40%;
+    padding: 6% 6%;
+    cursor: pointer;
+    background-color: var(--background-color);
+    font-size: calc(1vh + 1vw);
+}
+
 /****************************************************************FOOTER***************************************************************/
-footer small {
+footer small ul {
     margin-top: 8vh;
     margin-bottom: 2vh;
     display: flex;
@@ -193,7 +269,11 @@ footer small {
 }
 
 footer a {
+    text-decoration: none;
+    font-family: "poppins";
     margin-right: 9vh;
     color: var(--secondary-color);
     font-size: calc(0.8vh + 0.8vw);
 }
+
+
