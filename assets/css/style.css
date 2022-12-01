@@ -27,7 +27,6 @@ header h1 {
     color: var(--secondary-color);
     font-size: calc(5vw + 4vh);
     text-align: center;
-    text-decoration: underline;
 }
 /************************************************************BODY*********************************************************************/
 body {
@@ -196,4 +195,5 @@ footer small {
 footer a {
     margin-right: 9vh;
     color: var(--secondary-color);
+    font-size: calc(0.8vh + 0.8vw);
 }
