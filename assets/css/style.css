@@ -3,9 +3,9 @@
     --main-color: #A5A5C6;
     --secondary-color: #D691CE;
     --third-color: #FFFFFF;
-    --fourth-color: rgba(204, 76, 161, 0.85);
+    --fourth-color: #cc4ca1d9;
 }
-
+/***********************************************************LOGO**********************************************************************/
 #logo {
     background-color: var(--background-color);
     width: auto;
@@ -13,24 +13,23 @@
 }
 
 #logo img {
-    width: 15vw;
-    height: 25vh;
+    width: 15%;
+    height: 15%;
 }
-
+/***********************************************************HEADER********************************************************************/
 header {
     background-color: var(--background-color);
     width: auto;
     height: auto;
-    padding-bottom: 40px;
 }
 
 header h1 {
-    color: var(--fourth-color);
-    font-size: calc(6vw + 4vh);
+    color: var(--secondary-color);
+    font-size: calc(5vw + 4vh);
     text-align: center;
     text-decoration: underline;
 }
-
+/************************************************************BODY*********************************************************************/
 body {
     background-color: var(--background-color);
 }
@@ -39,10 +38,11 @@ main {
     display: flex;
     justify-content: center;
 }
-
+/************************************************************GRID*********************************************************************/
 .card-grid {
     margin-top: 75px;
     width: 50%;
+    height: auto;
     box-sizing: border-box;
     display: grid;
     grid-column: 4;
@@ -50,16 +50,16 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 8px;
-    height: 100vh;
+    height: 95vh;
 }
-
+/********************************************************SECONDARY CARDS**************************************************************/
 .thecard {
     position: relative;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.9s ease;
-    border-radius: 20px;
+    border-radius: 10px;
 
 }
 
@@ -73,8 +73,12 @@ main {
     text-align: center;
     background-image: url(cardbachkgroundhighres.jpeg);
     background-size: 100% 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: calc(0.5vw + 0.3vh);
+}
+.front h1 {
+  font-size: calc(0.8vh + 0.6vw);
+  color: var(--secondary-color);
 }
 
 .back {
@@ -86,14 +90,14 @@ main {
     color: var(black);
     text-align: center;
     transform: rotateY(180deg);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .back img {
     width: 80%;
     height: 30%;
     margin-top: 1.5vh;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .back h1 {
@@ -104,29 +108,28 @@ main {
 
 .back p {
     text-align: start;
-    font-size: calc(0.5vw + 0.6vh);
+    font-size: calc(0.5vw + 0.7vh);
 }
 
 .back .desc {
-    margin-top: 0.5em;
     font-weight: bold;
-    font-size: calc(0.8vw + 0.5vh);
+    font-size: calc(0.8vw + 0.8vh);
     color: var(--fourth-color);
 
 }
 
-.back .qualflaw {
-    margin-top: 0.5em;
+.back .qualflaw { 
     font-weight: bold;
-    font-size: calc(0.5vw + 0.5vh);
+    font-size: calc(0.7vw + 0.7vh);
     color: var(--fourth-color);
+    word-wrap: break-word;
 
 }
 
 .thecard:hover {
     transform: rotateY(180deg);
 }
-
+/************************************************************MAIN CARD****************************************************************/
 .thecard-chosen {
     position: relative;
     width: 100%;
@@ -136,7 +139,7 @@ main {
     grid-column: span 2;
     grid-row: span 3;
     grid-area: 1 / 2 / 4 / 4;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 
@@ -146,14 +149,14 @@ main {
     height: 100%;
     backface-visibility: hidden;
     background-image: url(cardbachkgroundhighres.jpeg);
-    color: var(--fourth-color);
+    color: var(--secondary-color);
     text-align: center;
     background-size: 100% 100%;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .front-chosen h1 {
-    font-size: calc(1.3vw + 1vh);
+    font-size: calc(1.1vw + 1.8vh);
 }
 
 .back-chosen {
@@ -165,14 +168,14 @@ main {
     color: var(--fourth-color);
     text-align: center;
     transform: rotateY(180deg);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .back-chosen img {
     width: 80%;
     height: 30%;
     margin-top: 2.5vh;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .back-chosen h1 {
@@ -182,14 +185,15 @@ main {
 .thecard-chosen:hover {
     transform: rotateY(180deg);
 }
-
+/****************************************************************FOOTER***************************************************************/
 footer small {
-    margin-top: 180px;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 footer a {
-    color: var(--third-color);
-    margin-right: 100px;
+    margin-right: 9vh;
+    color: var(--secondary-color);
 }
