@@ -102,19 +102,12 @@ ul, a {
     align-items: center;
     margin: 2rem 1rem;
 }
-.cg {
-    margin-right: -80px;
-}
-.staff{
-    margin-left: 50px;
-}
-.sign-up {
-    margin-left: 9px;
-}
+
 
 /* MEDIA QUERIES */
+
 @media screen and (min-width:1300px) {
     .staff {
-        margin-left: -1px;
+        margin-left: -40px;
     }
 }
