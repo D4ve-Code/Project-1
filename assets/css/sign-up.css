@@ -1,0 +1,217 @@
+:root {
+    --background-color: #373748;
+    --main-color: #A5A5C6;
+    --secondary-color: #D691CE;
+    --third-color: #FFFFFF;
+    --fourth-color: rgba(204, 76, 161, 0.85);
+    --font2: "poppins", sans-serif;
+    --font1: "Zen Dots", cursive;
+}
+
+
+
+/*----------------HEADER----------------------*/
+
+header {
+    width: auto;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: var(--font1);
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+#logo {
+    position: absolute;
+    margin-right: 15px;
+
+}
+
+#logo img {
+    width: 23vw;
+    height: 13vh;
+    margin-right: 15px;
+}
+
+
+/*----------------BODY------------------------*/
+
+body {
+    background: var(--background-color);
+
+    /*display: flex;
+    justify-content: center;*/
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+}
+
+
+/*----------------BLOC FORMULE ABO------------------*/
+
+main {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    min-height: 70vh;
+
+}
+
+
+h2 {
+    padding-bottom: 10px;
+    font-weight: bolder;
+    font-family: var(--font2);
+    font-size: 20px;
+}
+
+h3 {
+    font-family: var(--font2);
+    color: var(--fourth-color);
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.formule {
+    background: var(--main-color);
+    border: 2px solid --secondary-color;
+    padding: 10px;
+    margin: 40px 20px 40px 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px var(--secondary-color);
+    color: var(--third-color);
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+/*----------------Listes----------------------*/
+
+span {
+    color: var(--fourth-color);
+}
+
+.standart {
+    padding: 10px;
+    font-size: small;
+    justify-content: space-evenly;
+}
+
+.bonus {
+    color: var(--fourth-color);
+    padding: 5px;
+}
+
+/*----------------Button----------------------*/
+
+
+button {
+    border: 4px solid #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow:
+        0 0 8px #fff,
+        inset 0 0 8px #fff,
+        0 0 16px var(--fourth-color),
+        inset 0 0 16px var(--fourth-color),
+        0 0 32px var(--fourth-color),
+        inset 0 0 32px var(--fourth-color);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: var(--font2);
+
+
+
+}
+
+button:hover {
+    transform: translateY(-0.25em);
+    background: var(--secondary-color);
+    border: 4px solid var(--secondary-color);
+    color: var(--fourth-color);
+    box-shadow:
+        0 0 8px var(--fourth-color),
+        inset 0 0 8px var(--fourth-color),
+        0 0 16px #fff,
+        inset 0 0 16px #fff,
+        0 0 32px #fff,
+        inset 0 0 32px #fff;
+}
+
+/*----------------FOOTER----------------------*/
+
+footer {
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 48px;
+    */
+}
+
+li a {
+
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font2);
+    color: var(--secondary-color);
+    display: inline;
+    margin-right: 35px;
+}
+
+.foot {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------------RESPONSIVE-----------------*/
+
+@media screen and (min-width:1300px) {
+
+    #logo img {
+        width: 15vw;
+        height: 15vh;
+    }
+
+    .formule {
+        margin: 50px 200px;
+        box-shadow: 3px 7px 7px var(--secondary-color);
+    }
+
+    .standart {
+        font-size: 20px;
+
+    }
+
+    header h1 {
+        margin-top: 39px;
+    }
+
+    h2 {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
