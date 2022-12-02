@@ -8,6 +8,11 @@ h1 {
     margin: auto;
     
 }
+.logo > img{
+    text-align: center;
+    width: 15px;
+    height: 15px;
+}
 .gallery{
     display: flex;
     flex-wrap: wrap;
