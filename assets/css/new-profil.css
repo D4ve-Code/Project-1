@@ -90,6 +90,7 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
 
+
 }
 
 
@@ -157,7 +158,6 @@ footer {
     display: flex;
     justify-content: flex-end;
     margin-top: 48px;
-    */
 }
 
 li a {
