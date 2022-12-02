@@ -297,3 +297,8 @@
         --current-color1: purple;
     }
 }
+@media screen and (min-width: 1299px){
+    .carrousel{
+        display: none;
+    }
+}
