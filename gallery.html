@@ -3,81 +3,209 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <!--  HEAD  -->
+<!--  HEAD  -->
 
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
 
-        <!--  SEO BY WEBHOPE LTD  -->
+    <!--  SEO BY WEBHOPE LTD  -->
 
-        <meta name="title" content="Jeu code & match">
-        <meta name="description" content="Site de rencontre de Wilders">
-        <meta name="robots" content="noindex, nofollow">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="language" content="French">
-        <meta name="revisit-after" content="1 days">
-        <meta name="author" content="WEBHOPE LTD">
+    <meta name="title" content="Jeu code & match">
+    <meta name="description" content="Site de rencontre de Wilders">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="WEBHOPE LTD">
 
-        <!--  STYLES  -->
+    <!--  STYLES  -->
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-        <link rel="stylesheet" href="/assets/css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="assets/css/style-dave.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     </head>
 
-    <!--  BODY  -->
+<!--  BODY  -->
 
-    <body>
+<body>
 
-<!--  HEADER  -->
-            
-        <header>
-
+    <!--  HEADER  -->
+    
+    <header>
+        <div class="logo">
+            <img src="assets/img/logocoeur1.png" alt="logocoeur">
+        </div>
+        <div class="title">
+            <h1>This is your Match</h1>
+        </div>
         </header>
 
-<!--  MAIN  -->
+    <!--  MAIN  -->
 
-        <main>
-            <div id="carrousel">
-                <div id="container">
-                </div>
-                <img src="assets/img/fleche-incurvee-droite.png" alt="bouton droite" class="bouton" id="d" />
-                <img src="assets/img/fleche-incurvee-gauche.png" alt="bouton gauche" class="bouton" id="g" />
+    <main class="carrousel">
+        <div class="container">
+    
+            <input type="radio" name="slider" class="d-none" id="s1" checked>
+            <input type="radio" name="slider" class="d-none" id="s2">
+            <input type="radio" name="slider" class="d-none" id="s3">
+            <input type="radio" name="slider" class="d-none" id="s4">
+            <input type="radio" name="slider" class="d-none" id="s5">
+            <input type="radio" name="slider" class="d-none" id="s6">
+            <input type="radio" name="slider" class="d-none" id="s7">
+    
+    
+            <div class="cards">
+                <label for="s1" id="slide1">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/couple (1).jpg" alt="">
+                            <div class="dots">
+                                <div class="dot1"></div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                            <span class="name">1Card -- Abdou & Alexandra</span>
+                            <span class="lorem">They will share everything with you, from coding to bakery trough a lot of
+                                GIF. Join them and you will progress all you life !
+                            </span>
+                        </div>
+                        <a href="/contact" class="btn-contact">Play</a>
+                    </div>
+                </label>
+    
+                <label for="s2" id="slide2">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/couple (3).jpg" alt="">
+                            <div class="dots">
+                                <div class="dot1"></div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                            <span class="name">2Card -- Moana & Maxence</span>
+                            <span class="lorem">From 21 to 39 years old, you will not be bored. Love is in the meadow, Moana
+                                will take you to the Maxence's Butcher's shop with his big longboard.
+                            </span>
+                        </div>
+                        <a href="/contact" class="btn-contact">Play</a>
+                    </div>
+                </label>
+    
+                <label for="s3" id="slide3">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/couple (4).jpg" alt="">
+                            <div class="dots">
+                                <div class="dot1"></div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                            <span class="name">3Card -- Marion & Valter</span>
+                            <span class="lorem">Couple of the year ! They will take you to travel around the world. The
+                                Valter's specialty (aka WALLY), climb on board of his big 40t trucks !
+                            </span>
+                        </div>
+                        <a href="/contact" class="btn-contact">Play</a>
+                    </div>
+                </label>
+                <!-- ------------------------------------TEST DE RAJOUT DES CARDS -->
+                <label for="s4" id="slide4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/couple (1).jpg" alt="">
+                            <div class="dots">
+                                <div class="dot1"></div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                            <span class="name">4Card -- Cecilia & Antoine</span>
+                            <span class="lorem">Couple of the year ! They will take you to travel around the world. The
+                                Valter's specialty (aka WALLY), climb on board of his big 40t trucks !
+                            </span>
+                        </div>
+                        <a href="/contact" class="btn-contact">Play</a>
+                    </div>
+                </label>
+    
+                <label for="s5" id="slide5">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/couple (3).jpg" alt="">
+                            <div class="dots">
+                                <div class="dot1"></div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                            <span class="name">5Card -- Emma & Samy</span>
+                            <span class="lorem">Couple of the year ! They will take you to travel around the world. The
+                                Valter's specialty (aka WALLY), climb on board of his big 40t trucks !
+                            </span>
+                        </div>
+                        <a href="/contact" class="btn-contact">Play</a>
+                    </div>
+                </label>
+    
+                <label for="s6" id="slide6">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/couple (4).jpg" alt="">
+                            <div class="dots">
+                                <div class="dot1"></div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                            <span class="name">6Card -- Helène & Sophie</span>
+                            <span class="lorem">Couple of the year ! They will take you to travel around the world. The
+                                Valter's specialty (aka WALLY), climb on board of his big 40t trucks !
+                            </span>
+                        </div>
+                        <a href="/contact" class="btn-contact">Play</a>
+                    </div>
+                </label>
+    
+                <label for="s7" id="slide7">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/img/couple (3).jpg" alt="">
+                            <div class="dots">
+                                <div class="dot1"></div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                            <span class="name">7Card -- Ryan & Jean-Loïc</span>
+                            <span class="lorem">Couple of the year ! They will take you to travel around the world. The
+                                Valter's specialty (aka WALLY), climb on board of his big 40t trucks !
+                            </span>
+                        </div>
+                        <a href="/contact" class="btn-contact">Play</a>
+                    </div>
+                </label>
+    
+                <!-- ------------------------------------TEST DE RAJOUT DES CARDS -->
             </div>
-            <script>
-                document.body.onload = function () {
-                    nbr = 5;
-                    p = 0;
-                    container = document.getElementById("container");
-                    g = document.getElementById("g");
-                    d = document.getElementById("d");
-                    container.style.width = (800 * nb) + "px";
-                    for (i = 1; i <= nbr; i++) {
-                        div =
-                                }
-                }
-            </script>
-        </main>
+</div>
+</main>
 
-<!--  FOOTER  -->
+    <!-- FOOTER  -->
 
-        <!-- <footer>
-            <small>
-                <ul>
-                    <li><a href="#">Conditions générale</a></li>
-                    <li><a href="#">Staff</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                </ul>
-            </small>
-        </footer> -->
+    <footer>
+        <small>
+            <ul>
+                <li><a href="#">Conditions générale</a></li>
+                <li><a href="#">Staff</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </small>
+    </footer>
 
-<!--  JS  -->
+    <!-- JS  -->
 
-        <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
 
-    </body>
+</body>
+
 </html>
