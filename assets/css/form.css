@@ -35,11 +35,9 @@
 
 /*-------------------------header-------------------------------------*/
  header {
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     }
 
  h1 {
@@ -52,8 +50,7 @@
 
 .form-container h1, form {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items:center;
     }
     
 .title {
@@ -62,10 +59,9 @@
    }
 
 .logo {
-    height: 150px;
-    width: 150px;
+    height: 20%;
+    width: 20%;
 }   
-        
 /*-------------------------body----------------------------------------*/    
 body {
     background-color:  var(--background-color);
@@ -88,6 +84,9 @@ form {
     background-color: var(--main-color);
     padding: 5%;
     border-radius: 30px;
+    box-shadow: 0 0 1em 0 var(--main-color);
+    
+
     }
 
 .question {
@@ -105,6 +104,7 @@ select {
     background-color: var(--secondary-color);
     border-radius: 30px;
     border-color: var(--secondary-color);
+    box-shadow: 10px 5px 5px var(--background-color);
     }
 
 label {
@@ -120,26 +120,40 @@ label {
 .bouton {
     width: 120px;
     height: 46px;
-    background-color: var(--secondary-color);
-    border-radius: 30px;
-    border-color: var(--secondary-color);
-    margin: 40px;
+    margin: 111px;
     }
+
+.match {
+    padding: 0.75em 1em;
+    display: flex;
+    justify-content: center;
+    border: currentColor 0.125em solid;
+    border-radius: 2em;
+    border-color: var(--secondary-color);
+    color: var(--third-color);
+    text-shadow: 
+    0 0 0.125em hsl(0 0% 100% / 0.5),
+    0 0 0.125em currentColor;
+    box-shadow: 0 0 0.5em 0 var(--secondary-color);
+    text-decoration: none;
+    
+}
 
 input {
        
     background-color: var(--secondary-color);
     border: none;
     margin: 10px 20px 20px 20px; 
-    font-family: var(--font1);
+    font-family: var(--font2);
     font-size: 20px;
     }
+
 /*-------------------------------footer--------------------------------*/
 footer ul {
     display: flex;
     justify-content: space-between;
-    text-align: center;
     list-style-type: none;
+    margin: 2rem 1rem;
     }
            
 li a {
