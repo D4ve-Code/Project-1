@@ -35,8 +35,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 4rem;
-        font-size: 50px;
+        margin: 2rem;
+            font-size: 30px;
         color: var(--secondary-color);
         font-family: var(--font1);
     }
@@ -59,7 +59,8 @@
 
     .container {
         width: 100%;
-        height: 75vh;
+        height: 30vh;
+            transform: scale(.65);
         display: flex;
         transform-style: preserve-3d;
         flex-direction: column;
@@ -73,8 +74,8 @@
     .cards {
 
         position: relative;
-        height: 400px;
-        width: 330px;
+        height: 100%;
+            width: 100%;
         margin-bottom: 20px;
         perspective: 1000px;
         transform-style: preserve-3d;
@@ -177,13 +178,14 @@
         align-items: center;
         cursor: pointer;
         border: currentColor 0.125em solid;
-        border-radius: 2em;
+        border-radius: 3em;
         border-color: var(--secondary-color);
         color: var(--third-color);
         text-shadow:
             0 0 0.125em hsl(0 0% 100% / 0.5),
             0 0 0.125em currentColor;
         box-shadow: 0 0 0.5em 0 var(--background-color);
+        background-color: var(--background-color);
     }
 
     /* .card .btn-contact {
@@ -202,17 +204,16 @@
         font-weight: 700;
         transition: all .7s ease;
     } */
-
-    /*--------------------footer -------------------*/
+        
     footer {
-        margin-top: 25rem;
+        margin-top: 15rem;
         font-family: var(--font2);
     }
 
     footer ul {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        position: absolute;
+            justify-items: center;
     }
 
     footer a {
@@ -226,15 +227,10 @@
     }
 
     li {
-        margin: 2rem;
+        margin-left: 3rem;
     }
-
-
-
-    /*--------------------fonction flip -------------------*/
-
-    /*--------------------cartes à gauche de la main dans le carrousel -------------------*/
-
+/*--------------------cartes à gauche de la main dans le carrousel----------------*/
+/*--------------------fonction de flip -------------------*/
     #s1:checked~.cards #slide5,
     #s2:checked~.cards #slide6,
     #s3:checked~.cards #slide7,
@@ -452,11 +448,12 @@
     align-items: center;
     cursor: pointer;
     border: currentColor 0.125em solid;
-    border-radius: 2em;
+    border-radius: 3em;
     border-color: var(--secondary-color);
     color: var(--third-color);
     text-shadow:
         0 0 0.125em hsl(0 0% 100% / 0.5),
         0 0 0.125em currentColor;
     box-shadow: 0 0 0.5em 0 var(--background-color);
+    background-color: var(--background-color);
 }
