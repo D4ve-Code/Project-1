@@ -1,0 +1,230 @@
+/* ROOTER */ 
+:root {
+    --background-color: #373748;
+    --main-color: #A5A5C6;
+    --secondary-color:#D691CE;
+    --third-color:#FFFFFF;
+    --font2: "poppins", sans-serif;
+    --font1: "Zen Dots", cursive;
+}
+
+/* PARAMETRE GLOBAL */       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BODY */
+body {
+    
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+/* LOGO */
+.logo img {
+    width: 20%;
+    height: 20%;
+}
+.profile img {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    margin-left: 15%;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20%;
+}
+.profile h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    color: var(--main-color);
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(12, 12, 12, 0.6);
+}
+.profile2 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    color: var(--main-color);
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(12, 12, 12, 0.6);
+}
+.profile2 img {
+    margin-top: 35%;
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+    margin-left: 23%;
+}
+.profile2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.news {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  .newsletter h3 {
+    color: var(--secondary-color);
+    font-family: var(--font1);
+    margin: 4rem;
+    font-size: 1.2rem;
+    text-align: center;
+    
+  }
+  .newsletter input {
+    
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: var(--background-color);
+    outline: none;
+    font-size: 1.2rem;
+    border: currentColor 0.125em solid;
+    border-color: var(--secondary-color);
+    text-shadow: 
+    0 0 0.125em hsl(0 0% 100% / 0.5),
+    0 0 0.125em currentColor;
+    box-shadow: 0 0 0.5em 0 var(--secondary-color);
+  }
+  .button-container button {
+    border-radius: 3rem;
+    color: var(--third-color);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    background: var(--background-color);
+    margin-top: 3rem;
+    margin-left: 10px;
+    text-shadow: 2px 2px 5px rgba(12, 12, 12, 0.6);
+    border: currentColor 0.125em solid;
+    border-color: var(--secondary-color);
+    text-shadow: 
+    0 0 0.125em hsl(0 0% 100% / 0.5),
+    0 0 0.125em currentColor;
+    box-shadow: 0 0 0.5em 0 var(--secondary-color);
+  }
+  input::placeholder {
+    color: var(--main-color);
+    text-shadow: 2px 2px 5px rgba(12, 12, 12, 0.6);
+  }
+
+/* TEXT */
+ul, a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--font2);
+}
+
+/* STAFF CONTAINER */
+.staff-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+    color: var(--secondary-color);
+}
+.title h1{
+    font-size: 1.6em;
+    margin-top: 2rem;
+}
+.subtitle h3, a {
+    font-size: 1.6em;
+}
+.subtitle h3 {
+    margin-top: 40rem;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.neon-btn {
+    width: 228px;
+    height: 82px;
+    margin: 10rem 0 0 0;
+    padding: 0.75em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: currentColor 0.125em solid;
+    border-radius: 2em;
+    border-color: var(--secondary-color);
+    color: var(--third-color);
+    text-shadow: 
+    0 0 0.125em hsl(0 0% 100% / 0.5),
+    0 0 0.125em currentColor;
+    box-shadow: 0 0 0.5em 0 var(--secondary-color);
+    animation: slideDown 2s;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(256px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+
+/* FOOTER */
+.footer-container a {
+    font-size: 0.95em;
+}
+.footer-container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:1300px) {
+    .staff {
+        margin-left: -40px;
+    }
+    .title h1 {
+            font-size: 4em;
+    }
+    .profile2 h3, .profile h3, .newsletter h3 {
+        font-size: 1.6em;
+    }
+    .profile img {
+        width: 60%;
+        height: 60%;
+    }
+    .profile2 img {
+        width: 45%;
+        height: 45%;
+    }
+}
+
+
