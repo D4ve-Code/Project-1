@@ -20,20 +20,16 @@ header {
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 33px;
     font-family: var(--font1);
     text-align: center;
     color: var(--secondary-color);
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 25px;
     margin-left: 20px;
 
 }
-
 #logo {
     position: absolute;
-    top: 0;
-    left: 0;
     margin-right: 15px;
 
 }
@@ -41,7 +37,9 @@ header h1 {
 #logo img {
     width: 23vw;
     height: 13vh;
-    margin-right: 15px;
+    margin-right: 20px;
+    margin-top: -20px;
+
 }
 
 
@@ -188,4 +186,34 @@ li a {
     .staff {
         margin-left: -1px;
     }
-}
+    #logo img {
+        width: 30%;
+        height: 30%;
+        margin-top: -40px;
+    }
+
+    .standart {
+        font-size: 20px;
+
+    }
+
+    header h1 {
+        margin-top: 39px;
+        font-size: 50px;
+        margin-left: 65px;
+    }
+
+    h2 {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+}}
