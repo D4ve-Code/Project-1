@@ -1,0 +1,290 @@
+:root {
+    --background-color: #373748;
+    --main-color: #A5A5C6;
+    --secondary-color: #D691CE;
+    --third-color: #FFFFFF;
+    --fourth-color: #cc4ca1d9;
+    --font2: "poppins", sans-serif;
+    --font1: "Zen Dots", cursive
+}
+
+/***********************************************************LOGO**********************************************************************/
+#logo {
+    background-color: var(--background-color);
+    width: auto;
+    height: auto;
+}
+
+#logo img {
+    width: 15%;
+    height: 15%;
+}
+
+/***********************************************************HEADER********************************************************************/
+header {
+    background-color: var(--background-color);
+    width: auto;
+    height: auto;
+}
+
+header h1 {
+    margin-bottom: 8vh;
+    font-family: "Zen Dots";
+    color: var(--secondary-color);
+    font-size: calc(3vw + 4vh);
+    text-align: center;
+}
+
+/************************************************************BODY*********************************************************************/
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/************************************************************GRID*********************************************************************/
+.card-grid {
+    margin-top: 75px;
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-column: 4;
+    grid-row: 3;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px;
+    height: 95vh;
+}
+
+/********************************************************SECONDARY CARDS**************************************************************/
+.thecard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.9s ease;
+    border-radius: 10px;
+
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: black;
+    color: var(--fourth-color);
+    text-align: center;
+    background-image: url(/assets/img/cardbackgroundhighres.jpeg);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    font-size: calc(0.5vw + 0.3vh);
+}
+
+.front h1 {
+    font-size: calc(0.8vh + 0.6vw);
+    color: var(--secondary-color);
+    font-family: "Zen Dots";
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: var(--main-color);
+    color: var(black);
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.back img {
+    width: 80%;
+    height: 30%;
+    margin-top: 1.5vh;
+    border-radius: 10px;
+}
+
+.back h1 {
+    font-family: "Zen Dots";
+    color: var(--fourth-color);
+    font-size: calc(1vh + 0.7vw);
+    margin-top: 1vh;
+}
+
+.back p {
+    padding-left: 4px;
+    font-family: "poppins";
+    text-align: start;
+    font-size: calc(0.5vw + 0.7vh);
+}
+
+.back .desc {
+    padding-left: 4px;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: calc(0.6vw + 0.7vh);
+    color: var(--background-color);
+
+}
+
+.back .qualflaw {
+    padding-left: 4px;
+    font-weight: bold;
+    font-size: calc(0.4vw + 0.6vh);
+    color: var(--background-color);
+    word-wrap: break-word;
+    font-family: "poppins";
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: var(--third-color);
+    text-decoration: none;
+    border: solid var(--secondary-color);
+    border-radius: 2em;
+    width: 40%;
+    padding: 2% 2%;
+    cursor: pointer;
+    background-color: var(--background-color);
+}
+/************************************************************MAIN CARD****************************************************************/
+.thecard-chosen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    grid-column: span 2;
+    grid-row: span 3;
+    grid-area: 1 / 2 / 4 / 4;
+    border-radius: 10px;
+}
+
+
+.front-chosen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(/assets/img/cardbackgroundhighres.jpeg);
+    color: var(--secondary-color);
+    text-align: center;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.front-chosen h1 {
+    font-size: calc(1vw + 1.2vh);
+    font-family: "Zen Dots";
+}
+
+.back-chosen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: var(--main-color);
+    color: var(--fourth-color);
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    color: black;
+}
+
+.back-chosen img {
+    width: 80%;
+    height: 30%;
+    margin-top: 2.5vh;
+    border-radius: 10px;
+}
+
+.back-chosen h1 {
+    font-family: "Zen Dots";
+    font-size: calc(1vh + 1.8vw);
+    margin-top: 1vh;
+    color: var(--fourth-color);
+}
+.back-chosen .desc {
+    padding-left: 8px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: calc(1vw + 1vh);
+    color: var(--background-color);
+    text-align: start;
+
+}
+.back-chosen p {
+    padding-left: 8px;
+    font-family: "poppins";
+    text-align: start;
+    font-size: calc(0.8vw + 0.8vh);
+}
+.back-chosen .qualflaw {
+    padding-left: 8px;
+    font-weight: bold;
+    font-size: calc(1vw + 1vh);
+    color: var(--background-color);
+    word-wrap: break-word;
+    font-family: "poppins";
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+
+}
+
+.thecard-chosen:hover {
+    transform: rotateY(180deg);
+}
+.chosen-button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: var(--third-color);
+    text-decoration: none;
+    border: solid var(--secondary-color);
+    border-width: 0.3em;
+    border-radius: 3em;
+    width: 40%;
+    padding: 6% 6%;
+    cursor: pointer;
+    background-color: var(--background-color);
+    font-size: calc(1vh + 1vw);
+}
+
+/****************************************************************FOOTER***************************************************************/
+footer small ul {
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: "poppins";
+    margin-right: 9vh;
+    color: var(--secondary-color);
+    font-size: calc(0.8vh + 0.8vw);
+}
+
+@media screen and (max-width: 1300px){
+    .grid-gallery{
+        display: none;
+    }
+}
+
