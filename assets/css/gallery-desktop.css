@@ -155,12 +155,12 @@ main {
     cursor: pointer; 
     color: var(--third-color);
     border-width: 0.2em;
-    background-color: var(--main-color);
+    background-color: var(--background-color);
     border: var(--secondary-color) 0.175em solid;
     text-shadow: 
     0 0 0.125em hsl(0 0% 100% / 0.5),
     0 0 0.125em currentColor;
-    box-shadow: 0 0 2em 0 var(--secondary-color);
+    box-shadow: 0 0 0.05em 0 var(--background-color);
 }
 
 /************************************************************MAIN CARD****************************************************************/
@@ -261,14 +261,14 @@ main {
     width: 60%;
     padding: 5% 5%;
     cursor: pointer;
-    background-color: var(--main-color);
+    background-color: var(--background-color);
     font-size: calc(1vh + 1vw);
     margin: auto; 
     border: var(--secondary-color) 0.175em solid;
     text-shadow: 
     0 0 0.125em hsl(0 0% 100% / 0.5),
     0 0 0.125em currentColor;
-    box-shadow: 0 0 2em 0 var(--secondary-color);
+    box-shadow: 0 0 0.05em 0 var(--background-color);
 
     
 }
