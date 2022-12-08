@@ -1,3 +1,5 @@
+/*************************************************GLOBAL VAR*************************************************/
+
 let card = document.getElementById("card");
 let theCard = document.querySelector(".thecard");
 let theCardChosen = document.querySelector(".thecard-chosen");
@@ -10,12 +12,15 @@ let buttonContainerBack = document.querySelector(".buttoncontainer")
 let buttonMain = document.querySelector(".chosen-button")
 let buttonBack = document.querySelector(".button")
 
+/*************************************************CARD3 VAR*************************************************/ 
+
 let theCard3 = document.querySelector(".card3");
 let styleBack3 = document.querySelector(".switch3");
 let titleStyleBack3 = document.querySelector(".title3");
 let buttonContainerBack3 = document.querySelector(".box3");
 let buttonBack3 = document.querySelector(".but3")
 
+/*************************************************CARD4 VAR*************************************************/
 
 let theCard4 = document.querySelector(".card4");
 let styleBack4 = document.querySelector(".switch4");
@@ -23,11 +28,15 @@ let titleStyleBack4 = document.querySelector(".title4");
 let buttonContainerBack4 = document.querySelector(".box4");
 let buttonBack4 = document.querySelector(".but4")
 
+/*************************************************CARD5 VAR*************************************************/
+
 let theCard5 = document.querySelector(".card5");
 let styleBack5 = document.querySelector(".switch5");
 let titleStyleBack5 = document.querySelector(".title5");
 let buttonContainerBack5 = document.querySelector(".box5");
 let buttonBack5 = document.querySelector(".but5")
+
+/*************************************************CARD6 VAR*************************************************/
 
 let theCard6 = document.querySelector(".card6");
 let styleBack6 = document.querySelector(".switch6");
@@ -35,11 +44,17 @@ let titleStyleBack6 = document.querySelector(".title6");
 let buttonContainerBack6 = document.querySelector(".box6");
 let buttonBack6 = document.querySelector(".but6")
 
+/*************************************************CARD7 VAR*************************************************/
+
 let theCard7 = document.querySelector(".card7");
 let styleBack7 = document.querySelector(".switch7");
 let titleStyleBack7 = document.querySelector(".title7");
 let buttonContainerBack7 = document.querySelector(".box7");
 let buttonBack7 = document.querySelector(".but7")
+
+
+/*************************************************FUNCTION SWITCH MAIN TO BASIC*************************************************/
+
 
 function reset() {
   if (card !== document.querySelector(".carte1")) {
@@ -51,6 +66,8 @@ function reset() {
     titleStyleMain.innerHTML = "<h1>Other choice</h1>";
   }
 }
+
+/*************************************************FUNCTION SWITCH GRID*************************************************/
 
 
 function change() {
@@ -123,6 +140,11 @@ function change() {
     titleStyleBack7.innerHTML = "<h1>Here is your best match</h1>";
   }
 }
+
+
+/*************************************************FUNCTION MATCH*************************************************/
+
+
 
 function choosecards() {
   let choosecard = Math.floor(Math.random() * 7 + 1);
