@@ -12,7 +12,7 @@
    
 *   {
     margin: 0px;
-    padding: 0;
+    padding: 0%;
     box-sizing: border-box;
     }
 
@@ -128,7 +128,7 @@ label {
     display: flex;
     justify-content: center;
     border: currentColor 0.125em solid;
-    border-radius: 2em;
+    border-radius: 3em;
     border-color: var(--secondary-color);
     color: var(--third-color);
     text-shadow: 
@@ -136,22 +136,15 @@ label {
     0 0 0.125em currentColor;
     box-shadow: 0 0 0.5em 0 var(--secondary-color);
     text-decoration: none;
+    font-family: var(--font2);
     
 }
 
-input {
-       
-    background-color: var(--secondary-color);
-    border: none;
-    margin: 10px 20px 20px 20px; 
-    font-family: var(--font2);
-    font-size: 20px;
-    }
 
 /*-------------------------------footer--------------------------------*/
 footer ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     margin: 2rem 1rem;
     }
@@ -161,6 +154,3 @@ li a {
     color: var(--secondary-color);
     }
 
-li {
-    margin: 2rem;
-}
