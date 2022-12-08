@@ -211,33 +211,35 @@ main {
 .back-chosen img {
     width: 80%;
     height: 30%;
-    margin-top: 2.5vh;
+    margin-top: 5vh;
     border-radius: 10px;
 }
 
 .back-chosen h1 {
     font-family: "Zen Dots";
-    font-size: calc(1vh + 1.8vw);
-    margin-top: 1vh;
+    font-size: calc(2vh + 1.8vw);
+    margin-top: 4vh;
     color: var(--fourth-color);
+    padding-bottom: 2vh;
 }
 
 .back-chosen .desc {
     padding-left: 8px;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 1em;
     font-weight: bold;
-    font-size: calc(1vw + 1vh);
+    font-size: calc(1.3vw + 1.3vh);
     color: var(--background-color);
     text-align: start;
 
 }
 
 .back-chosen p {
+    margin-top: 2vh;
     padding-left: 8px;
     font-family: "poppins";
     text-align: start;
-    font-size: calc(0.8vw + 0.8vh);
+    font-size: calc(1vw + 1vh);
 }
 
 
