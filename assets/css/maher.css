@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
 :root {
      --color-primary: #373748;
@@ -94,9 +96,9 @@
           max-height: 290px;
           font-size: calc(17px + 18vh);
           line-height: calc(17px + 20vh);
-          text-shadow: 0 0 5px #FFD0FA, 0 0 15px #FFD0FA, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #FFD0FA, 0 0 10px #ff8d00, 0 0 98px #FFD0FA;
-          color: #fff6a9;
-          font-family: "Sacramento", cursive;
+          
+          color: #FFD0FA;
+          font-family: "poppins", cursive;
           text-align: center;
           animation: blink 12s infinite;
           -webkit-animation: blink 12s infinite;
