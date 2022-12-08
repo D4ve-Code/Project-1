@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+:root {
+     --color-primary: #373748;
+     --color-secondary: #A5A5C6;
+     --color-tertiary: #FFD0FA;
+     }
+
+
+     body {
+          background-color: var(--color-primary); 
+          font-family: 'Inria Sans', sans-serif;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          height: 100vh;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+     }
+
+     header {
+          margin: 15px;
+     }
+
+     header nav {
+          display: flex;
+     }
+
+     header nav div {
+          background-color: var(--color-secondary);
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          margin: auto;
+          margin-left: 0;
+          display: flex;
+     }
+
+     header nav div span {
+          margin: auto;
+          width: 1ch;
+          overflow: hidden;
+          white-space: nowrap;
+          font-size: 20px;
+          color: var(--color-primary);
+     }
+
+     main #lanchGame .playToDate {
+          display: flex;
+          justify-content: center;
+          color: var(--color-tertiary);
+          font-size: 40px;
+          
+     }
+
+     main {
+          margin: 15px;
+          height: calc(100% - 106px)
+     }
+
+     main article {
+          height: 100%;
+          width: 100%;
+          
+     }
+
+     #lanchGame {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+          /* display: none; TODO: remove this line */
+
+     }
+     #game {
+          display: none;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+     }
+     #game #gameCanvas {
+          /* border: 2px dotted var(--color-tertiary); */
+          height: 100%;
+     }
+     main article button {
+          background-color: var(--color-secondary);
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          margin: auto;
+          border: 0;
+          max-width: 290px;
+          max-height: 290px;
+          font-size: calc(17px + 18vh);
+          line-height: calc(17px + 20vh);
+          
+          color: #FFD0FA;
+          font-family: "poppins", cursive;
+          text-align: center;
+          animation: blink 12s infinite;
+          -webkit-animation: blink 12s infinite;
+          
+     }
+
+     footer {
+          margin: 15px;
+          margin-top: auto;
+     }
+
+     footer small ul {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+     }
+
+     footer small ul li {
+          margin: auto;
+     }
+
+     footer small ul li a {
+          color: var(--color-secondary);
+          text-decoration: none;
+     }
+
+     .popin {
+          position: absolute;
+          height: 100vh;
+          background: var(--color-primary);
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          display: none;
+     }
+     .popin .popinBox {
+        width: 100%;
+     }
+     .popin .popinContent {
+          margin: auto;
+          min-height: 150px;
+          text-align: center;
+          color: var(--color-primary);
+          max-width: 600px;
+          width: inherit;
+          width: 100%;
+     }
+     .popin .popinContent .contentText{
+        background-color: var(--color-secondary);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+        margin:30px;
+        display: flex;
+        flex-direction: column;
+     }
+     .popin h1 {
+          color: var(--color-tertiary);
+          font-size: 25px;
+          text-align: center;
+     }
+     .popin .popinHeader {
+          font-size: 30px;
+          font-weight: bold;
+     }
+     .popin .popinBody {
+          font-size: 25px;
+          font-weight: bold;
+          margin-top: 41px;
+          margin-bottom: 41px;
+          line-height: 42px;
+     }
+     .popin .popinFooter {
+          font-size: 21px;
+          font-weight: bold;
+          display: flex;
+          margin:auto;
+     }
+     .popin .popinFooter a {
+          padding: 10px;
+          text-decoration: none;
+          background: var(--color-tertiary);
+          border-radius: 5px;
+          color: var(--color-primary);
+     }
+     .popin .popinFooter a:hover {
+          background: var(--color-primary);
+          color: var(--color-tertiary);
+     }
+     #game .heart ul {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+     }
+     #game .heart ul li {
+          margin: auto;
+     }
+     #game .heart svg {
+          fill: var(--color-tertiary);
+          height: 45px;
+          width: auto;
+     }
+     
+@media (min-width: 320px) { 
+     
+}
+@media (min-width: 768px) { 
+     .popin .popinHeader {
+          font-size: 40px;
+          font-weight: bold;
+     }
+}
