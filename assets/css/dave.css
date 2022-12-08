@@ -35,21 +35,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 4rem;
-        font-size: 50px;
+        margin: 2rem;
+            font-size: 30px;
         color: var(--secondary-color);
         font-family: var(--font1);
     }
 
     .logo img {
+<<<<<<< HEAD:assets/css/dave.css
+        width: 20%;
+        height: 20%;
+=======
         width: 15%;
         height: 15%;
+>>>>>>> dev:assets/css/style-dave.css
     }
 
     input {
         display: none;
     }
 
+    /* -------------CSS du MAIN/carrousel mobile----------*/
     .carrousel {
         display: flex;
         align-items: center;
@@ -58,23 +64,23 @@
 
     .container {
         width: 100%;
-        height: 80vh;
-        max-width: 300px;
-        max-height: 300px;
+        height: 30vh;
+            transform: scale(.65);
         display: flex;
         transform-style: preserve-3d;
         flex-direction: column;
         display: flex;
         align-items: center;
         justify-content: center;
+        /* touch-action: double-tap-zoom; */
     }
 
 
     .cards {
 
         position: relative;
-        height: 400px;
-        width: 330px;
+        height: 100%;
+            width: 100%;
         margin-bottom: 20px;
         perspective: 1000px;
         transform-style: preserve-3d;
@@ -168,6 +174,26 @@
     }
 
     .card .btn-contact {
+        width: 228px;
+        height: 80px;
+        margin: 2rem 0 0 4rem;
+        padding: 0.75em 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: currentColor 0.125em solid;
+        border-radius: 3em;
+        border-color: var(--secondary-color);
+        color: var(--third-color);
+        text-shadow:
+            0 0 0.125em hsl(0 0% 100% / 0.5),
+            0 0 0.125em currentColor;
+        box-shadow: 0 0 0.5em 0 var(--background-color);
+        background-color: var(--background-color);
+    }
+
+    /* .card .btn-contact {
 
         width: 100%;
         height: 60px;
@@ -182,17 +208,17 @@
         letter-spacing: 10px;
         font-weight: 700;
         transition: all .7s ease;
-    }
-
+    } */
+        
     footer {
-        margin-top: 25rem;
+        margin-top: 15rem;
         font-family: var(--font2);
     }
 
     footer ul {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        position: absolute;
+            justify-items: center;
     }
 
     footer a {
@@ -206,12 +232,10 @@
     }
 
     li {
-        margin: 2rem;
+        margin-left: 3rem;
     }
-
-
-
-
+/*--------------------cartes à gauche de la main dans le carrousel----------------*/
+/*--------------------fonction de flip -------------------*/
     #s1:checked~.cards #slide5,
     #s2:checked~.cards #slide6,
     #s3:checked~.cards #slide7,
@@ -221,7 +245,7 @@
     #s7:checked~.cards #slide4 {
         box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 45%);
         transform: translate3d(-30%, 0, -220px);
-        --current-color1: green;
+        --current-color1: var(--third-color);
     }
 
     #s1:checked~.cards #slide6,
@@ -233,7 +257,7 @@
     #s7:checked~.cards #slide5 {
         box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
         transform: translate3d(-30%, 0, -170px);
-        --current-color1: yellow;
+        --current-color1: var(--third-color);
     }
 
     #s1:checked~.cards #slide7,
@@ -245,9 +269,10 @@
     #s7:checked~.cards #slide6 {
         box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
         transform: translate3d(-30%, 0, -120px);
-        --current-color1: blue;
+        --current-color1: var(--third-color);
     }
 
+    /*------------carte main du carrousel----------*/
     #s1:checked~.cards #slide1,
     #s2:checked~.cards #slide2,
     #s3:checked~.cards #slide3,
@@ -260,6 +285,8 @@
         --current-color1: var(--fourth-color);
     }
 
+    /*--------------------cartes à droite de la main dans le carrousel -------------------*/
+
     #s1:checked~.cards #slide2,
     #s2:checked~.cards #slide3,
     #s3:checked~.cards #slide4,
@@ -269,7 +296,7 @@
     #s7:checked~.cards #slide1 {
         box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
         transform: translate3d(30%, 0, -120px);
-        --current-color1: orange
+        --current-color1: var(--third-color);
     }
 
     #s1:checked~.cards #slide3,
@@ -281,7 +308,7 @@
     #s7:checked~.cards #slide2 {
         box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
         transform: translate3d(30%, 0, -170px);
-        --current-color1: black;
+        --current-color1: var(--third-color);
     }
 
 
@@ -294,11 +321,144 @@
     #s7:checked~.cards #slide3 {
         box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 45%);
         transform: translate3d(30%, 0, -220px);
-        --current-color1: purple;
+        --current-color1: var(--third-color);
     }
 }
-@media screen and (min-width: 1299px){
-    .carrousel{
+
+@media screen and (min-width: 1299px) {
+    .carrousel {
         display: none;
     }
+}
+
+/* -----Mise en CSS de la carte 1 - card chosen qui a la fonction flip-------- */
+.mobile-cardchosen {
+
+    position: relative;
+    width: 430px;
+    height: 650px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.mobile-front-chosen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-image: url(/assets/img/cardbackgroundhighres.jpeg);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.mobile-back-chosen {
+    position: relative;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 30px 35px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+/*---ancien code de la mobile back chosen---*/
+/* .mobile-back-chosen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    height: 100%;
+    margin: 10px;
+} */
+
+.mobile-back-chosen .image {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.mobile-back-chosen .image img {
+    border-radius: 5px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+    width: 310px;
+    height: 220px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.mobile-back-chosen .image .dots {
+    text-align: center;
+}
+
+.mobile-cardchosen:hover {
+    transform: rotateY(180deg);
+}
+
+
+.mobile-back-chosen .dots div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.mobile-back-chosen .dots div:nth-child(1) {
+
+    background-color: var(--current-color1);
+}
+
+
+.mobile-back-chosen .infos {
+
+    display: block;
+    text-align: end;
+    padding-top: 60px;
+}
+
+.mobile-back-chosen .infos span {
+
+    display: block;
+}
+
+.mobile-back-chosen .infos .name {
+
+    font-size: 30px;
+    color: var(--current-color1);
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    padding-left: 25%;
+    transition: all .6s ease;
+    font-family: var(--font1);
+}
+
+.mobile-back-chosen .infos .lorem {
+
+    font-size: 15.5px;
+    color: var(--background-color);
+    letter-spacing: 3px;
+    font-family: var(--font2);
+}
+
+.mobile-back-chosen .btn-contact {
+    width: 228px;
+    height: 80px;
+    margin: 2rem 0 0 4rem;
+    padding: 0.75em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: currentColor 0.125em solid;
+    border-radius: 3em;
+    border-color: var(--secondary-color);
+    color: var(--third-color);
+    text-shadow:
+        0 0 0.125em hsl(0 0% 100% / 0.5),
+        0 0 0.125em currentColor;
+    box-shadow: 0 0 0.5em 0 var(--background-color);
+    background-color: var(--background-color);
 }
