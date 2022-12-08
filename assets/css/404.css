@@ -40,6 +40,7 @@ header h1 {
     width: 23vw;
     height: 13vh;
     margin-right: 15px;
+    margin-top: -20px;
 }
 
 
@@ -176,7 +177,10 @@ footer {
     display: flex;
     justify-content: flex-end;
     margin-top: 48px;
+    margin-bottom: 30px;
+    margin-right: 30px;
 }
+
 
 li a {
 

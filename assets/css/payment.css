@@ -37,7 +37,8 @@ header h1 {
 #logo img {
     width: 23vw;
     height: 13vh;
-    margin-right: 15px;
+    margin-right: 20px;
+    margin-top: -20px;
 
 }
 
