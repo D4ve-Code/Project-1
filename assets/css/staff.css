@@ -27,8 +27,8 @@ body {
     height: 20%;
 }
 .profile img {
-    width: 70%;
-    height: 70%;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     margin-left: 15%;
 }
@@ -58,8 +58,8 @@ body {
 }
 .profile2 img {
     margin-top: 35%;
-    width: 55%;
-    height: 55%;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     margin-left: 23%;
 }
@@ -178,19 +178,9 @@ ul, a {
     0 0 0.125em hsl(0 0% 100% / 0.5),
     0 0 0.125em currentColor;
     box-shadow: 0 0 0.5em 0 var(--secondary-color);
-    animation: slideDown 2s;
+    
 }
 
-@keyframes slideDown {
-    from {
-        transform: translateY(256px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1; 
-    }
-}
 
 
 /* FOOTER */
@@ -217,14 +207,7 @@ ul, a {
     .profile2 h3, .profile h3, .newsletter h3 {
         font-size: 1.6em;
     }
-    .profile img {
-        width: 50%;
-        height: 50%;
-    }
-    .profile2 img {
-        width: 45%;
-        height: 45%;
-    }
+
 }
 
 @media screen and (max-width:500px) {
