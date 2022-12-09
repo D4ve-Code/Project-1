@@ -386,7 +386,7 @@ btnLanchGame.addEventListener('click', () => {
           })
 
           youLose = () =>{
-              window.location.href = "signUp.html";
+              window.location.href = "staff.html";
           }
 
           youWin = () =>{
