@@ -207,7 +207,7 @@ ul, a {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width:1300px) {
+@media screen and (min-width:800px) {
     .staff {
         margin-left: -40px;
     }
@@ -218,8 +218,8 @@ ul, a {
         font-size: 1.6em;
     }
     .profile img {
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 50%;
     }
     .profile2 img {
         width: 45%;
@@ -227,4 +227,29 @@ ul, a {
     }
 }
 
-
+@media screen and (max-width:500px) {
+    .profile  {
+        flex-direction: column;
+        margin-left: 80px;
+        justify-content: space-between;
+    }
+    .profile2 {
+        flex-direction: column;
+        margin-left: 80px;
+        justify-content: space-between;
+    }
+    .profile img {
+        width: 50%;
+        height: 50%;
+        margin: 15%;
+    }
+    .profile2 img {
+        width: 50%;
+        height: 50%;
+        margin: 15%;
+    }
+    .profile2 h3, .profile h3{
+        font-size: 2em;
+        margin-left: -40px;
+    }
+}
