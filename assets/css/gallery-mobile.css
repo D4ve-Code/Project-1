@@ -204,29 +204,29 @@
         font-weight: 700;
         transition: all .7s ease;
     } */
-        
-    footer {
+     
+    .mobile-footer footer {
         margin-top: 15rem;
         font-family: var(--font2);
     }
 
-    footer ul {
+    .mobile-footer footer ul {
         display: flex;
         position: absolute;
             justify-items: center;
     }
 
-    footer a {
+    .mobile-footer footer a {
         text-decoration: none;
         color: var(--secondary-color);
     }
 
-    ul li {
+    .mobile-footer ul li {
         list-style: none;
         text-decoration: none;
     }
 
-    li {
+    .mobile-footer li {
         margin-left: 3rem;
     }
 /*--------------------cartes à gauche de la main dans le carrousel----------------*/
@@ -324,6 +324,10 @@
     .carrousel {
         display: none;
     }
+    .mobile-footer {
+        display: none;
+    }
+   
 }
 
 /* -----Mise en CSS de la carte 1 - card chosen qui a la fonction flip-------- */

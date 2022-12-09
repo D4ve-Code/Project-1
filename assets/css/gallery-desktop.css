@@ -295,5 +295,8 @@ footer a {
     .grid-gallery {
         display: none;
     }
+    .desktop-footer {
+        display: none;
+    }
     
 }
