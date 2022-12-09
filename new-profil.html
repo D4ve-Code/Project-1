@@ -29,6 +29,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
+
+    <title>New profile </title>
+    <link rel="shortcut icon" href="/assets/img/logoicon.png">
+
 </head>
 
 <!--  BODY  -->
@@ -38,8 +42,8 @@
     <!--  HEADER  -->
 
     <header>
-       
-       <div id="logo">
+
+        <div id="logo">
             <img src="assets/img/logocoeur1.png" alt="logo">
         </div>
 
@@ -56,21 +60,66 @@
             <br>
 
             <form class="dal">
-                <label>Firstname: <input type="text" id="firstname" placeholder="Firstname"></label>
+                <label>Firstname: 
+                    <br><input type="text" id="firstname" placeholder="Michel"></label>
                 <br>
-                <label>Phone:<input type="text" id="phone" placeholder="Phone"></label>
-               <br>
-                <label>Email:<input type="email" id="email" placeholder="email"></label>
-                <input type="text" id="quality" placeholder="Quality">
-                <input type="text" id="defect" placeholder="Defect">
-                <textarea cols="30" rows="10" placeholder="Description"></textarea>
+                <label>Phone:
+                    <br><input type="text" id="phone" placeholder="+34661666264"></label>
+                <br>
+                <label>Email:
+                    <br><input type="email" id="email" placeholder="mimich-du95@caramail.fr"></label>
+                    <label>Description:
+                        <br>
+                    <textarea cols="30" rows="10" placeholder="J'aime le poulet et les merge sans conflit"></textarea></label>
             </form>
-            <p>Question 1</p>
-            <p>Question 2</p>
-            <p>Question 3</p>
-            <p>Question 4</p>
+            <div class="bg-form">
+                <div>
+                    <label for="Question1">What is your favorite dish ?</label>
+                    <br>
+                    <select name="Question1" id="Question">
+                        <option value=""></option>
+                        <option value=""> couscous royal</option>
+                        <option value=""> couscous chicken</option>
+                        <option value=""> couscou merguez</option>
+                        <option value=""> couscou meatball</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Question2"> What is your favorite destination ?</label>
+                    <br>
+                    <select name="Question2" id="Question">
+                        <option value=""></option>
+                        <option value="1"> Arctique</option>
+                        <option value="2"> Antarctique</option>
+                        <option value="3"> Corée du Nord</option>
+                        <option value="4"> In prison</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Question3">What is your favorite movie ?</label>
+                    <br>
+                    <select name="Question3" id="Question">
+                        <option value=""></option>
+                        <option value="5"> Camping 2 </option>
+                        <option value="6"> RTT</option>
+                        <option value="7"> Le Raid</option>
+                        <option value="8"> Vive la France</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Question4"> Your ideal position ?</label>
+                    <br>
+                    <select name="Question4" id="Question">
+                        <option value=""></option>
+                        <option value="9"> 69</option>
+                        <option value="10"> 68</option>
+                        <option value="11"> 67</option>
+                        <option value="12"> 66</option>
+                    </select>
+                </div>
+            </div>
             <form action="/payment.html" method="get" target="_blank">
-            <button>Create</button></form>
+                <button>CREATE</button></form>
         </div>
 
         </div>
@@ -82,8 +131,8 @@
     <footer>
         <small>
             <ul class="foot">
-                <li><a href="#">General conditions</a></li>
-                <li><a href="#">Staff</a></li>
+                <li><a href="/terms.html">Terms of Service</a></li>
+                <li><a href="/staff.html">Staff</a></li>
                 <li><a href="/sign-up.html">Sign up</a></li>
             </ul>
         </small>
