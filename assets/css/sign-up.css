@@ -20,11 +20,11 @@ header {
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 36px;
     font-family: var(--font1);
     text-align: center;
     color: var(--secondary-color);
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 20px;
 
 }
@@ -39,6 +39,8 @@ header h1 {
     width: 23vw;
     height: 13vh;
     margin-right: 15px;
+    margin-top: -20px;
+
 }
 
 
@@ -69,7 +71,7 @@ h2 {
     padding-bottom: 10px;
     font-weight: bolder;
     font-family: var(--font2);
-    font-size: 20px;
+    font-size: 25px;
 }
 
 h3 {
@@ -89,8 +91,15 @@ h3 {
     color: var(--third-color);
     text-align: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    display: flex;
+    align-items: center
 
+}
+form{
+    position: relative;
+
+    margin-bottom: 5px;
 }
 
 
@@ -113,7 +122,34 @@ span {
 
 /*----------------Button----------------------*/
 
+button {
+    width: 128px;
+    height: 50px;
+    margin: 10rem 0 0 0;
+    padding: 0.75em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: currentColor 0.125em solid;
+    border-radius: 3em;
+    border-color: var(--secondary-color);
+    color: var(--third-color);
+    text-shadow: 
+    0 0 0.125em hsl(0 0% 100% / 0.5),
+    0 0 0.125em currentColor;
+    box-shadow: 0 0 0.5em 0 var(--secondary-color);
+    animation: slideDown 2s;
+    background-color: var(--background-color);
+}
 
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    box-shadow: none;
+}
+
+/* 
 button {
     border: 4px solid #fff;
     padding: 10px 20px;
@@ -133,6 +169,7 @@ button {
 
 
 
+
 }
 
 button:hover {
@@ -147,7 +184,7 @@ button:hover {
         inset 0 0 16px #fff,
         0 0 32px #fff,
         inset 0 0 32px #fff;
-}
+} */
 
 /*----------------FOOTER----------------------*/
 
@@ -155,7 +192,8 @@ footer {
     color: var(--secondary-color);
     display: flex;
     justify-content: flex-end;
-    margin-top: 48px;
+    margin-top: 68px;
+    margin-right: 65px;
 
 }
 
@@ -181,8 +219,9 @@ li a {
 @media screen and (min-width:1300px) {
 
     #logo img {
-        width: 15vw;
-        height: 15vh;
+        width: 30%;
+        height: 30%;
+        margin-top: -40px;
     }
 
     .formule {
@@ -197,6 +236,7 @@ li a {
 
     header h1 {
         margin-top: 39px;
+        font-size: 50px;
     }
 
     h2 {
